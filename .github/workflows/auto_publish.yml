@@ -1,3 +1,4 @@
+
 name: Generate Article
 
 on:
@@ -16,10 +17,12 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
-        run: pip install requests
+      - name: Install OpenAI (works for DeepSeek too)
+        run: pip install openai
 
       - name: Run article generator
+        env:
+          OPENAI_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python generate_article.py
 
       - name: Commit and push article
