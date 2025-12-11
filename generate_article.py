@@ -1,45 +1,45 @@
+
 import os
 import datetime
 import requests
+import json
 
-DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
-API_KEY = os.getenv("DEEPSEEK_API_KEY", "free")  # no real key needed
+API_KEY = os.getenv("OPENAI_API_KEY")   # your DeepSeek key (sk-...)
+API_URL = "https://api.deepseek.com/chat/completions"
 
-def ask_deepseek(prompt, system=""):
+
+def ask_deepseek(prompt):
     headers = {
-        "Content-Type": "application/json",
+        "Authorization": f"Bearer {API_KEY}",
+        "Content-Type": "application/json"
     }
 
     data = {
         "model": "deepseek-chat",
         "messages": [
-            {"role": "system", "content": system},
-            {"role": "user", "content": prompt},
-        ],
-        "temperature": 0.7,
-        "max_tokens": 800,
+            {"role": "user", "content": prompt}
+        ]
     }
 
-    r = requests.post(DEEPSEEK_URL, headers=headers, json=data)
-    r.raise_for_status()
-    return r.json()["choices"][0]["message"]["content"]
+    response = requests.post(API_URL, headers=headers, data=json.dumps(data))
+    response.raise_for_status()
+    return response.json()["choices"][0]["message"]["content"]
 
 
 def generate_title():
-    system = (
-        "You generate short, catchy, SEO-optimized titles for car modification articles. "
-        "Keep them between 6–12 words."
+    prompt = (
+        "Generate a short, catchy, SEO-optimized article title about car mods. "
+        "Keep it between 6–12 words."
     )
-    return ask_deepseek("Create a new article title.", system).strip()
+    return ask_deepseek(prompt).strip()
 
 
 def generate_article(title):
-    system = (
-        "Write detailed but readable SEO car modification articles. "
-        "Include an intro paragraph, 3 section headers, and a short conclusion."
+    prompt = (
+        f"Write a 600-word SEO-optimized article about: {title}. "
+        "Include intro, 3 sections, and a conclusion."
     )
-    prompt = f"Write a 600-word SEO-optimized article about: {title}"
-    return ask_deepseek(prompt, system).strip()
+    return ask_deepseek(prompt).strip()
 
 
 def insert_into_index(html_block):
