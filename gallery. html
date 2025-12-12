@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,25 +9,43 @@
 <style>
     body {
         font-family: Arial, sans-serif;
+        background: #111;
+        color: white;
         margin: 0;
         padding: 0;
-        background: #111;
-        color: #fff;
-        text-align: center;
+    }
+
+    /* Navigation Bar */
+    nav {
+        background: #222;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        font-size: 20px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        color: #4da6ff;
     }
 
     header {
-        background: #222;
+        text-align: center;
         padding: 20px;
-        font-size: 28px;
+        font-size: 32px;
         font-weight: bold;
     }
 
+    /* Gallery layout */
     .gallery-container {
-        padding: 20px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        grid-gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
     }
 
     .gallery-container img {
@@ -51,15 +70,10 @@
         justify-content: center;
         align-items: center;
     }
-
     #viewer img {
         max-width: 95%;
         max-height: 95%;
         border-radius: 10px;
-    }
-
-    #viewer:active {
-        display: none;
     }
 </style>
 
@@ -78,36 +92,21 @@ function closeViewer() {
 
 <body>
 
+<!-- Navigation -->
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="gallery.html">🖼️ Gallery</a>
+    <a href="products.html">🛒 Products</a>
+    <a href="contact.html">📞 Contact</a>
+</nav>
+
 <header>Photo Gallery</header>
-
-<div class="gallery-container">
-    <!-- Images inserted automatically -->
-    <img src="20160913_113158.jpg" onclick="openViewer(this.src)">
-    <img src="2010406_211510.jpg" onclick="openViewer(this.src)">
-    <img src="20210405_230943.jpg" onclick="openViewer(this.src)">
-    <img src="20120409_230914.jpg" onclick="openViewer(this.src)">
-    <img src="20210416_074925.jpg" onclick="openViewer(this.src)">
-    <img src="20210422_042653.jpg" onclick="openViewer(this.src)">
-    <img src="20210422_125347.jpg" onclick="openViewer(this.src)">
-    <img src="20210922_085405.jpg" onclick="openViewer(this.src)">
-    <img src="20220329_191839.jpg" onclick="openViewer(this.src)">
-    <img src="20221118_114450.jpg" onclick="openViewer(this.src)">
-    <img src="20230320_170226.jpg" onclick="openViewer(this.src)">
-    <img src="20250127_181747.jpg" onclick="openViewer(this.src)">
-
-    <!-- Screenshots -->
-    <img src="Screenshot_20251212-122706_.jpg" onclick="openViewer(this.src)">
-    <img src="Screenshot_20251212-122815_.jpg" onclick="openViewer(this.src)">
-    <img src="Screenshot_20251212-123207_.jpg" onclick="openViewer(this.src)">
-    <img src="Screenshot_20251212-123143_.jpg" onclick="openViewer(this.src)">
-    <img src="Screenshot_20251212-123339_.jpg" onclick="openViewer(this.src)">
-    <img src="Screenshot_20251212-123406_.jpg" onclick="openViewer(this.src)">
-</div>
 
 <!-- Fullscreen viewer -->
 <div id="viewer" onclick="closeViewer()">
-    <img id="viewer-img">
+    <img id="viewer-img" src="">
 </div>
 
-</body>
-</html>
+<!-- Gallery -->
+<div class="gallery-container">
+    <img src="20160913_113158.jpg" onclick="
