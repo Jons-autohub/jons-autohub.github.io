@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Jon's AutoHub</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #222;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .gallery-container {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 15px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #444;
+            transition: 0.3s;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05);
+            border-color: #0c7bff;
+        }
+
+        a.home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 18px;
+            background: #0c7bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        a.home-link:hover {
+            background: #005fcc;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>Photo Gallery</header>
+
+<p>Upload your best car photos and upgrades here!</p>
+
+<div class="gallery-container">
+
+    <!-- EXAMPLE IMAGES — Replace these with your own later -->
+    <img src="https://via.placeholder.com/400x250?text=Photo+1">
+    <img src="https://via.placeholder.com/400x250?text=Photo+2">
+    <img src="https://via.placeholder.com/400x250?text=Photo+3">
+    <img src="https://via.placeholder.com/400x250?text=Photo+4">
+
+</div>
+
+<a href="index.html" class="home-link">⬅ Back to Home</a>
+
+</body>
+</html>
