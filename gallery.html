@@ -9,95 +9,96 @@
 
     <style>
         body {
-            background: #000;
-            color: #fff;
             font-family: Arial, sans-serif;
-            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: #fff;
         }
 
         h1 {
-            font-size: 36px;
-            margin-top: 20px;
+            text-align: center;
+            padding: 20px 0;
         }
 
-        /* Gallery Grid */
         .gallery-container {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 15px;
+            padding-bottom: 50px;
         }
 
         .gallery-container img {
             width: 100%;
-            border-radius: 10px;
-            cursor: pointer;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 2px solid #333;
             transition: 0.3s;
         }
 
         .gallery-container img:hover {
             transform: scale(1.05);
-            opacity: 0.85;
+            border-color: #fff;
         }
 
-        /* Fullscreen viewer */
-        #viewer {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.9);
-            justify-content: center;
-            align-items: center;
+        /* Navigation bar */
+        nav {
+            background: #000;
+            padding: 15px;
+            text-align: center;
         }
 
-        #viewer img {
-            max-width: 95%;
-            max-height: 95%;
-            border-radius: 10px;
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
     </style>
-
-    <script>
-        function openViewer(src) {
-            document.getElementById("viewer-img").src = src;
-            document.getElementById("viewer").style.display = "flex";
-        }
-        function closeViewer() {
-            document.getElementById("viewer").style.display = "none";
-        }
-    </script>
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">🏠 Home</a>
-        <a href="gallery.html">🖼️ Gallery</a>
-        <a href="products.html">🛒 Products</a>
-        <a href="contact.html">📞 Contact</a>
-    </nav>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="articles.html">Articles</a>
+</nav>
 
-    <h1>Photo Gallery</h1>
+<h1>Photo Gallery</h1>
 
-    <!-- Fullscreen Viewer -->
-    <div id="viewer" onclick="closeViewer()">
-        <img id="viewer-img" src="">
-    </div>
+<div class="gallery-container">
+    <!-- Auto-filled list of all images -->
+    <img src="20160913_113158.jpg">
+    <img src="20140406_211150.jpg">
+    <img src="20140409_230454.jpg">
+    <img src="20140409_230914.jpg">
+    <img src="20140416_074525.jpg">
+    <img src="20210422_042653.jpg">
+    <img src="20210422_135353.jpg">
+    <img src="20210422_125447.jpg">
+    <img src="20210922_085405.jpg">
+    <img src="20220329_191839.jpg">
+    <img src="20221118_114450.jpg">
+    <img src="20230320_170226.jpg">
+    <img src="20250127_181747.jpg">
 
-    <!-- Gallery Images -->
-    <div class="gallery-container">
+    <!-- Screenshots -->
+    <img src="Screenshot_20251212-122706_.jpg">
+    <img src="Screenshot_20251212-122815_.jpg">
+    <img src="Screenshot_20251212-122909_.jpg">
+    <img src="Screenshot_20251212-123027_.jpg">
+    <img src="Screenshot_20251212-123143_.jpg">
+    <img src="Screenshot_20251212-123339_.jpg">
+    <img src="Screenshot_20251212-123406_.jpg">
+</div>
 
-        <img src="20160913_113158.jpg" onclick="openViewer(this.src)">
-        <img src="20210406_211510.jpg" onclick="openViewer(this.src)">
-        <img src="20210409_230450.jpg" onclick="openViewer(this.src)">
-        <img src="20210409_230914.jpg" onclick="openViewer(this.src)">
-        <img src="20210416_074925.jpg" onclick="openViewer(this.src)">
-        <img src="20210422_042653.jpg" onclick="openViewer(this.src)">
-        <img src="20210422_135339.jpg" onclick="openViewer(this.src)">
-        <img src="20210423_125447.jpg" onclick="openViewer(this.src)">
-        <img src="20210922_085405.jpg" onclick="openViewer(this.src)">
-        <img src="20220329_191839.jpg" onclick="openViewer(this.src)">
-        <img
+</body>
+        </html>
