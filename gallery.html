@@ -1,104 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
+    <title>Photo Gallery - Jon's AutoHub</title>
     <link rel="stylesheet" href="style.css">
-
     <style>
         body {
+            background: #111;
+            color: white;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #111;
-            color: #fff;
         }
 
-        h1 {
+        header {
             text-align: center;
-            padding: 20px 0;
-        }
-
-        .gallery-container {
-            width: 90%;
-            max-width: 1400px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            grid-gap: 15px;
-            padding-bottom: 50px;
-        }
-
-        .gallery-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: cover;
-            border: 2px solid #333;
-            transition: 0.3s;
-        }
-
-        .gallery-container img:hover {
-            transform: scale(1.05);
-            border-color: #fff;
-        }
-
-        /* Navigation bar */
-        nav {
+            padding: 20px;
             background: #000;
-            padding: 15px;
+            border-bottom: 2px solid #444;
+        }
+
+        nav {
             text-align: center;
+            margin-top: 10px;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 12px;
             font-size: 18px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: 0.2s;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            background: #444;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #333;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+            border-color: #777;
         }
     </style>
 </head>
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="articles.html">Articles</a>
-</nav>
+<header>
+    <h1>Photo Gallery</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="articles/">Articles</a>
+    </nav>
+</header>
 
-<h1>Photo Gallery</h1>
-
-<div class="gallery-container">
-    <!-- Auto-filled list of all images -->
-    <img src="20160913_113158.jpg">
-    <img src="20140406_211150.jpg">
-    <img src="20140409_230454.jpg">
-    <img src="20140409_230914.jpg">
-    <img src="20140416_074525.jpg">
-    <img src="20210422_042653.jpg">
-    <img src="20210422_135353.jpg">
-    <img src="20210422_125447.jpg">
-    <img src="20210922_085405.jpg">
-    <img src="20220329_191839.jpg">
-    <img src="20221118_114450.jpg">
-    <img src="20230320_170226.jpg">
-    <img src="20250127_181747.jpg">
+<div class="gallery">
+    <img src="20160913_113158.jpg" alt="">
+    <img src="20160406_211510.jpg" alt="">
+    <img src="20120409_234043.jpg" alt="">
+    <img src="20120409_230914.jpg" alt="">
+    <img src="20120416_074625.jpg" alt="">
+    <img src="20210422_042653.jpg" alt="">
+    <img src="20210422_135353.jpg" alt="">
+    <img src="20210422_125447.jpg" alt="">
+    <img src="20210922_085405.jpg" alt="">
+    <img src="20220329_191839.jpg" alt="">
+    <img src="20221118_114450.jpg" alt="">
+    <img src="20230320_170226.jpg" alt="">
+    <img src="20250127_181747.jpg" alt="">
 
     <!-- Screenshots -->
-    <img src="Screenshot_20251212-122706_.jpg">
-    <img src="Screenshot_20251212-122815_.jpg">
-    <img src="Screenshot_20251212-122909_.jpg">
-    <img src="Screenshot_20251212-123027_.jpg">
-    <img src="Screenshot_20251212-123143_.jpg">
-    <img src="Screenshot_20251212-123339_.jpg">
-    <img src="Screenshot_20251212-123406_.jpg">
+    <img src="Screenshot_20251212-122706_.jpg" alt="">
+    <img src="Screenshot_20251212-122815_.jpg" alt="">
+    <img src="Screenshot_20251212-122909_.jpg" alt="">
+    <img src="Screenshot_20251212-123207_.jpg" alt="">
+    <img src="Screenshot_20251212-123143_.jpg" alt="">
+    <img src="Screenshot_20251212-123339_.jpg" alt="">
+    <img src="Screenshot_20251212-123406_.jpg" alt="">
 </div>
 
 </body>
-        </html>
+</html>
