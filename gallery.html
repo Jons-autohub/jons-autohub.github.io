@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery - Jon's AutoHub</title>
+    <title>Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -12,80 +12,92 @@
             background: #000;
             color: #fff;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             text-align: center;
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin: 30px 0;
+            font-size: 36px;
+            margin-top: 20px;
         }
 
+        /* Gallery Grid */
         .gallery-container {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
             padding: 20px;
-            width: 100%;
-            max-width: 900px;
-            margin: auto;
         }
 
         .gallery-container img {
             width: 100%;
-            border-radius: 15px;
-            display: block;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
         }
 
-        nav {
-            background: #111;
-            padding: 15px 0;
+        .gallery-container img:hover {
+            transform: scale(1.05);
+            opacity: 0.85;
         }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            padding: 0;
-            margin: 0;
+        /* Fullscreen viewer */
+        #viewer {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
         }
 
-        nav ul li {
-            font-size: 1.2rem;
-        }
-
-        nav ul li a {
-            color: yellow;
-            text-decoration: none;
-        }
-
-        nav img {
-            width: 32px;
-            vertical-align: middle;
-            margin-right: 8px;
+        #viewer img {
+            max-width: 95%;
+            max-height: 95%;
+            border-radius: 10px;
         }
     </style>
+
+    <script>
+        function openViewer(src) {
+            document.getElementById("viewer-img").src = src;
+            document.getElementById("viewer").style.display = "flex";
+        }
+        function closeViewer() {
+            document.getElementById("viewer").style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
 
     <!-- Navigation -->
     <nav>
-        <ul>
-            <li><a href="index.html">🏠 Home</a></li>
-            <li><a href="gallery.html">🖼️ Gallery</a></li>
-            <li><a href="products.html">🛒 Products</a></li>
-            <li><a href="contact.html">📞 Contact</a></li>
-        </ul>
+        <a href="index.html">🏠 Home</a>
+        <a href="gallery.html">🖼️ Gallery</a>
+        <a href="products.html">🛒 Products</a>
+        <a href="contact.html">📞 Contact</a>
     </nav>
 
     <h1>Photo Gallery</h1>
 
-    <div class="gallery-container">
-        <!-- ADD YOUR IMAGES BELOW -->
+    <!-- Fullscreen Viewer -->
+    <div id="viewer" onclick="closeViewer()">
+        <img id="viewer-img" src="">
+    </div>
 
-        <img src="20160913_113158.jpg" alt="Vehicle Photo">
-        <img src="20210406_211510.jpg" alt="Vehicle Photo">
-        <img src="20210409_230450.jpg" alt="Vehicle Photo">
-        <img src="20210409_230914.jpg" alt="Vehicle
+    <!-- Gallery Images -->
+    <div class="gallery-container">
+
+        <img src="20160913_113158.jpg" onclick="openViewer(this.src)">
+        <img src="20210406_211510.jpg" onclick="openViewer(this.src)">
+        <img src="20210409_230450.jpg" onclick="openViewer(this.src)">
+        <img src="20210409_230914.jpg" onclick="openViewer(this.src)">
+        <img src="20210416_074925.jpg" onclick="openViewer(this.src)">
+        <img src="20210422_042653.jpg" onclick="openViewer(this.src)">
+        <img src="20210422_135339.jpg" onclick="openViewer(this.src)">
+        <img src="20210423_125447.jpg" onclick="openViewer(this.src)">
+        <img src="20210922_085405.jpg" onclick="openViewer(this.src)">
+        <img src="20220329_191839.jpg" onclick="openViewer(this.src)">
+        <img
