@@ -110,3 +110,12 @@ function closeViewer() {
 <!-- Gallery -->
 <div class="gallery-container">
     <img src="20160913_113158.jpg" onclick="
+<img src="20160913_113158.jpg" onclick="openViewer(this.src)">
+<img src="20140406_211510.jpg" onclick="openViewer(this.src)">
+<img src="20120405_230943.jpg" onclick="openViewer(this.src)">
+<img src="20120409_230914.jpg" onclick="openViewer(this.src)">
+<img src="20210416_074925.jpg" onclick="openViewer(this.src)">
+<img src="20120422_042653.jpg" onclick="openViewer(this.src)">
+<img src="20120422_125347.jpg" onclick="openViewer(this.src)">
+<img src="20210922_083405.jpg" onclick="openViewer(this.src)">
+<img src="20220329_191839.jpg" onclick="openViewer(this.src)">
