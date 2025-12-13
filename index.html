@@ -1,73 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jon's Auto Hub</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            background: #f8f8f8;
-        }
-        header {
-            background: #111;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: #222;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #00aaff;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-        .content h1 {
-            color: #222;
-        }
-        footer {
-            background: #111;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            margin-top: 40px;
-        }
-    </style>
-</head>
+  <meta charset="UTF-8">
+  <title>Jon's AutoHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
 
+    header {
+      background: #000;
+      padding: 20px;
+      border-bottom: 2px solid #333;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .nav h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 16px;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .hero a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      background: #ff9800;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .hero a:hover {
+      background: #e68900;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: #1b1b1b;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #333;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #000;
+      color: #777;
+      font-size: 14px;
+      border-top: 2px solid #333;
+    }
+  </style>
+</head>
 <body>
 
 <header>
-    <h1>Jon's Auto Hub</h1>
-    <p>Your source for automotive gear & affiliate deals</p>
+  <div class="nav">
+    <h1>Jon's AutoHub</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="products.html">Products</a>
+      <a href="articles/">Articles</a>
+    </div>
+  </div>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<section class="hero">
+  <h2>Custom Builds, Real Projects, Trusted Gear</h2>
+  <p>
+    Jon’s AutoHub is a hands-on automotive site focused on real builds,
+    custom vehicles, useful tools, and aftermarket parts that actually work.
+    No fluff — just real-world experience and recommendations.
+  </p>
+  <a href="gallery.html">View the Gallery</a>
+</section>
 
-<div class="content">
-    <h1>Welcome to Jon's Auto Hub</h1>
-    <p>Browse products, explore the gallery, and check out the latest deals.</p>
-</div>
+<section class="sections">
+  <div class="card">
+    <h3>📸 Photo Gallery</h3>
+    <p>Browse real builds, progress shots, and custom vehicle work.</p>
+  </div>
+
+  <div class="card">
+    <h3>🛠 Recommended Products</h3>
+    <p>Parts, tools, and gear I trust — all organized in one place.</p>
+  </div>
+
+  <div class="card">
+    <h3>📰 Articles & Guides</h3>
+    <p>How-tos, insights, and lessons learned from the garage.</p>
+  </div>
+</section>
 
 <footer>
-    © 2025 Jon's Auto Hub
+  © 2025 Jon’s AutoHub · Built with passion & grease
 </footer>
 
 </body>
