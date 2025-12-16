@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Gallery | Jon’s AutoHub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     body {
@@ -13,59 +13,43 @@
       color: #fff;
     }
 
-    /* NAV BAR */
     header {
       background: #000;
       border-bottom: 2px solid #333;
     }
 
-    nav {
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
       display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 15px 0;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    nav a {
+    .nav h1 {
+      margin: 0;
+    }
+
+    .nav a {
       color: #fff;
       text-decoration: none;
-      font-size: 18px;
-      padding: 6px 12px;
-      border-radius: 6px;
+      margin-left: 15px;
     }
 
-    nav a:hover {
-      background: #333;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    /* GALLERY GRID */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 15px;
-      padding: 20px;
-      max-width: 1400px;
+    main {
+      max-width: 1100px;
       margin: auto;
+      padding: 40px 20px;
+      text-align: center;
     }
 
-    .gallery img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
-      border: 2px solid #333;
-      background: #000;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.03);
-      transition: 0.2s;
-      border-color: #666;
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #333;
+      color: #aaa;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -73,27 +57,25 @@
 <body>
 
 <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="products.html">Products</a>
-    <a href="articles/">Articles</a>
-  </nav>
+  <div class="nav">
+    <h1>Jon’s AutoHub</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/articles/">Articles</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/products.html">Products</a>
+    </nav>
+  </div>
 </header>
 
-<h1>Photo Gallery</h1>
+<main>
+  <h2>Vehicle Gallery</h2>
+  <p>Gallery images coming soon.</p>
+</main>
 
-<section class="gallery">
-  <img src="assets/images/20210409_230450.jpg">
-  <img src="assets/images/20210409_230914.jpg">
-  <img src="assets/images/20210416_074925.jpg">
-  <img src="assets/images/20210422_042653.jpg">
-  <img src="assets/images/20210422_135339.jpg">
-  <img src="assets/images/20210423_125447.jpg">
-  <img src="assets/images/20220329_191839.jpg">
-  <img src="assets/images/20221118_114450.jpg">
-  <img src="assets/images/20230320_170226.jpg">
-  <img src="assets/images/20250127_181747.jpg">
-</section>
+<footer>
+  © 2025 Jon’s AutoHub
+</footer>
 
 </body>
+</html>
