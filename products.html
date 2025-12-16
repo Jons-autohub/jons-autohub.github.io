@@ -1,139 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | Jon's AutoHub</title>
+  <meta charset="UTF-8" />
+  <title>Products | Jon’s AutoHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
 
-        header {
-            background: #111;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    header {
+      background: #000;
+      border-bottom: 2px solid #333;
+    }
 
-        nav {
-            background: #222;
-            padding: 10px;
-            text-align: center;
-        }
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .nav h1 {
+      margin: 0;
+    }
 
-        nav a:hover {
-            color: #00aaff;
-        }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+    }
 
-        .container {
-            max-width: 1100px;
-            margin: 20px auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-        .product-card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            text-align: center;
-        }
-
-        .product-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .product-card a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background: #00aaff;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .product-card a:hover {
-            background: #0088cc;
-        }
-
-        footer {
-            margin-top: 40px;
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-    </style>
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #333;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Featured Auto Products</h1>
+  <div class="nav">
+    <h1>Jon’s AutoHub</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/articles/">Articles</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/products.html">Products</a>
+    </nav>
+  </div>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<div class="container">
-
-    <!-- PRODUCT 1 -->
-    <div class="product-card">
-        <img src="https://m.media-amazon.com/images/I/71jSsqrrc-L._AC_SL1500_.jpg" alt="LED Light Bar" loading="lazy">
-        <h3>LED Slim Light Bar – 2 Pack</h3>
-        <p>Super bright slim LEDs for trucks, ATVs, and off-road vehicles.</p>
-        <a href="https://amzn.to/4qa5BU0" target="_blank">View Product</a>
-    </div>
-
-    <!-- PRODUCT 2 -->
-    <div class="product-card">
-        <img src="https://m.media-amazon.com/images/I/71MbnX1cQ-L._AC_SL1500_.jpg" alt="Car Accessory" loading="lazy">
-        <h3>Premium Car Interior Accessory</h3>
-        <p>Upgrade your car experience with this must-have add-on.</p>
-        <a href="https://amzn.to/4oV6crn" target="_blank">View Product</a>
-    </div>
-
-    <!-- PRODUCT 3 -->
-    <div class="product-card">
-        <img src="https://m.media-amazon.com/images/I/81hHcB71twL._AC_SL1500_.jpg" alt="Vehicle Category" loading="lazy">
-        <h3>Explore All Auto Parts</h3>
-        <p>Browse thousands of auto upgrades and accessories.</p>
-        <a href="https://www.amazon.com/Vehicles/b?ie=UTF8&node=10677469011&linkCode=ll2&tag=joncrandellca-20&linkId=d326cb6c69cc1325fae2b693a05c2a20&language=en_US&ref_=as_li_ss_tl" target="_blank">View Products</a>
-    </div>
-
-    <!-- PRODUCT 4 -->
-    <div class="product-card">
-        <img src="https://m.media-amazon.com/images/I/71uZw9lT5SL._AC_SL1500_.jpg" alt="Amazon Product" loading="lazy">
-        <h3>Recommended Auto Tool</h3>
-        <p>High-quality tool essential for every car owner.</p>
-        <a href="https://amzn.to/4rUiTFN" target="_blank">View Product</a>
-    </div>
-
-</div>
+<main>
+  <h2>Products</h2>
+  <p>Aftermarket parts and affiliate products coming soon.</p>
+</main>
 
 <footer>
-    <p>© 2025 Jon's AutoHub — Amazon Affiliate Store</p>
+  © 2025 Jon’s AutoHub
 </footer>
 
 </body>
-    </html>
+</html>
