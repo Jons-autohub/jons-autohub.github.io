@@ -1,144 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Products | Jon’s AutoHub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Products | Jon’s AutoHub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
 
-        header {
-            background: #111;
-            border-bottom: 1px solid #333;
-        }
+header {
+    background: #111;
+    border-bottom: 1px solid #333;
+}
 
-        .nav {
-            max-width: 1200px;
-            margin: auto;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        .nav h1 {
-            margin: 0;
-            font-size: 22px;
-        }
+.nav h1 {
+    margin: 0;
+    font-size: 22px;
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 15px;
-            font-size: 16px;
-        }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a:hover {
+    text-decoration: underline;
+}
 
-        main {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
 
-        h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
 
-        .product {
-            background: #111;
-            border: 1px solid #333;
-            border-radius: 6px;
-            padding: 15px;
-            text-align: center;
-        }
+.product {
+    background: #111;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
 
-        .product img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 10px;
-        }
+.product img {
+    width: 100%;
+    border-radius: 4px;
+}
 
-        .product h3 {
-            font-size: 18px;
-            margin: 10px 0;
-        }
+.product h3 {
+    margin: 10px 0;
+}
 
-        .product p {
-            font-size: 14px;
-            color: #ccc;
-        }
+.product p {
+    color: #ccc;
+    font-size: 14px;
+}
 
-        .product a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background: #ff9900;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-        }
+.product a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ff9900;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+}
 
-        .product a:hover {
-            background: #ffb733;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            border-top: 1px solid #333;
-            color: #777;
-            font-size: 14px;
-            margin-top: 40px;
-        }
-    </style>
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <div class="nav">
-        <h1>Jon’s AutoHub</h1>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/products.html">Products</a>
-            <a href="/gallery.html">Gallery</a>
-            <a href="/articles/">Articles</a>
-        </nav>
-    </div>
+<div class="nav">
+    <h1>Jon’s AutoHub</h1>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/products.html">Products</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="/articles/">Articles</a>
+    </nav>
+</div>
 </header>
 
 <main>
-    <h2>Recommended Auto Products</h2>
+<h2>Recommended Automotive Products</h2>
 
-    <div class="products">
+<div class="products">
 
-        <div class="product">
-            <img src="/assets/images/Truck.jpg" alt="Automotive Product">
-            <h3>Vehicle Accessories & Parts</h3>
-            <p>Hand-picked automotive accessories and upgrades for trucks and cars.</p>
-            <a href="https://amzn.to/4qa5BU0" target="_blank">View on Amazon</a>
-        </div>
+<div class="product">
+    <img src="/assets/images/Truck.jpg" alt="Truck Accessories">
+    <h3>Truck Accessories</h3>
+    <p>Popular accessories and upgrades for modern trucks.</p>
+    <a href="https://amzn.to/4qa5BU0" target="_blank">View on Amazon</a>
+</div>
 
-        <div class="product">
-            <img src="/assets/images/Truck1.jpg" alt="Automotive Product">
-            <h3>Performance & Maintenance</h3>
-            <p>Improve performance, safety, and reliability with trusted gear.</p>
-            <a href="https://amzn.to/4o
+<div class="product">
+    <img src="/assets/images/Truck1.jpg" alt="Vehicle Parts">
+    <h3>Vehicle Parts</h3>
+    <p>Reliable parts for maintenance and performance.</p>
+    <a href="https://amzn.to/4oV6crn" target="_blank">View on Amazon</a>
+</div>
+
+<div class="product">
+    <img src="/assets/images/Truck2.jpg" alt="Vehicle Categories">
+    <h3>Shop by Vehicle</h3>
+    <p>Browse Amazon’s vehicle-specific categories.</p>
+    <a href="https://www.amazon.com/Vehicles/b?node=10677469011&tag=joncrandellca-20" target="_blank">
+        Browse on Amazon
+    </a>
+</div>
+
+<div class="product">
+    <img src="/assets/images/Truck3.jpg" alt="Garage Tools">
+    <h3>Tools & Garage Gear</h3>
+    <p>Essential tools for DIY auto work.</p>
+    <a href="https://amzn.to/4rUiTFN" target="_blank">View on Amazon</a>
+</div>
+
+</div>
+</main>
+
+<footer>
+© 2025 Jon’s AutoHub
+</footer>
+
+</body>
+</html>
