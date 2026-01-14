@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RV Repair Services | Jon's AutoHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
 
+    <style>
+        body {
+            background: #111;
+            color: #eee;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background: #000;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        h1, h2 {
+            color: #00aaff;
+        }
+
+        .contact-box {
+            background: #1b1b1b;
+            border: 2px solid #00aaff;
+            padding: 25px;
+            margin: 40px 0;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-box p {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        .phone {
+            font-size: 22px;
+            font-weight: bold;
+            color: #00ffcc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            border-top: 2px solid #333;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="../gallery.html">Gallery</a>
+    <a href="../products.html">Products</a>
+    <a href="../articles/">Articles</a>
+</nav>
+
+<div class="container">
+
+    <h1>RV Repair & Mobile Service</h1>
+    <p><em>By Jon's AutoHub</em></p>
+
+    <p>
+        RV ownership brings freedom and adventure, but when repairs are needed,
+        having a trusted and reliable service provider makes all the difference.
+        From minor fixes to urgent repairs, professional RV service helps keep
+        you safe and on the road.
+    </p>
+
+    <h2>Common RV Issues We Handle</h2>
+    <ul>
+        <li>Electrical and battery problems</li>
+        <li>Plumbing leaks and water systems</li>
+        <li>General mechanical repairs</li>
+        <li>Preventative maintenance</li>
+        <li>Emergency roadside fixes</li>
+    </ul>
+
+    <p>
+        Mobile RV repair means you don’t have to tow or transport your unit.
+        Service comes directly to you — saving time, hassle, and money.
+    </p>
+
+    <!-- CONTACT / AD SECTION -->
+    <div class="contact-box">
+        <h2>Trusted & Reliable Mobile RV Service</h2>
+
+        <p><strong>Contact:</strong> Jon Home</p>
+
+        <p>📞 <span class="phone">204-424-5265</span> (Home)</p>
+        <p>📱 <span class="phone">204-381-4678</span> (Cell)</p>
+
+        <p style="margin-top:15px;">
+            <strong>Service Area:</strong><br>
+            Available throughout <strong>Southeast Manitoba</strong>
+        </p>
+
+        <p style="font-size: 15px; margin-top: 15px;">
+            Mobile • Reliable • Honest Service
+        </p>
+    </div>
+
+    <h2>Why Choose Mobile RV Repair?</h2>
+    <p>
+        Mobile service eliminates the stress of moving a damaged or unsafe RV.
+        Whether you’re parked at home, a campground, or storage lot, professional
+        service can come directly to you.
+    </p>
+
+    <p>
+        If your RV needs attention before your next trip — or an unexpected issue
+        arises — don’t wait. Reliable service now can prevent expensive damage later.
+    </p>
+
+</div>
+
+<footer>
+    <p>© 2025 Jon's AutoHub — RV & Automotive Services</p>
+</footer>
+
+</body>
+</html>
