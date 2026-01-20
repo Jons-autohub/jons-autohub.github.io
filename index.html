@@ -26,7 +26,6 @@ body {
 .emergency-banner a {
     color: #fff;
     text-decoration: underline;
-    font-weight: bold;
 }
 
 /* NAV */
@@ -68,7 +67,7 @@ nav a:hover {
 
 /* SECTIONS */
 .section {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
     border-top: 1px solid #333;
@@ -93,10 +92,12 @@ nav a:hover {
     border: 1px solid #333;
 }
 
-.card a {
-    color: #00aaff;
-    text-decoration: none;
-    font-weight: bold;
+/* MAP */
+.map-container {
+    margin-top: 20px;
+    border: 2px solid #00aaff;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 /* FOOTER */
@@ -114,9 +115,8 @@ footer {
 
 <!-- EMERGENCY MOBILE SERVICE -->
 <div class="emergency-banner">
-    🚨 EMERGENCY MOBILE RV & SMALL ENGINE SERVICE AVAILABLE — 
-    CALL NOW: <a href="tel:2044245265">204-424-5265</a>  
-    <br>
+    🚨 EMERGENCY MOBILE RV & SMALL ENGINE SERVICE — 
+    CALL NOW: <a href="tel:2044245265">204-424-5265</a><br>
     Serving Southeast Manitoba
 </div>
 
@@ -132,44 +132,54 @@ footer {
     <h1>Welcome to JON’S RV & SMALL ENGINE REPAIR</h1>
     <p>
         Trusted and reliable mobile repair services for RVs, small engines,
-        and automotive needs. Fast response emergency service available
-        throughout Southeast Manitoba.
+        and emergency breakdowns. Fast on-site service throughout Southeast Manitoba.
     </p>
 </div>
 
 <div class="section">
-    <h2>Services & Resources</h2>
+    <h2>Emergency & Mobile Services</h2>
 
     <div class="cards">
-
         <div class="card">
-            <h3>Emergency RV Repair</h3>
-            <p>Breakdowns, electrical issues, water systems, and urgent repairs.</p>
-            <p><strong>Call:</strong> <a href="tel:2044245265">204-424-5265</a></p>
+            <h3>📞 Emergency Call-Out</h3>
+            <p>
+                Mobile diagnostics and repairs when you need them most.
+            </p>
+            <p><strong>Call:</strong> 204-424-5265</p>
+            <p><strong>Cell:</strong> 204-381-4678</p>
         </div>
 
         <div class="card">
-            <h3>Small Engine Repair</h3>
-            <p>Generators, lawn equipment, and mobile diagnostics.</p>
+            <h3>🔧 RV & Small Engine Repair</h3>
+            <p>
+                RV electrical, plumbing, generators, lawn equipment,
+                and general mechanical repair.
+            </p>
         </div>
+    </div>
+</div>
 
-        <div class="card">
-            <h3>Vehicle Gallery</h3>
-            <p>Real repairs, custom work, and hands-on projects.</p>
-            <a href="/gallery.html">View Gallery →</a>
-        </div>
+<div class="section">
+    <h2>📍 Service Area — Southeast Manitoba</h2>
+    <p>
+        Mobile service available throughout Southeast Manitoba.
+        Call ahead for emergency or scheduled repairs.
+    </p>
 
-        <div class="card">
-            <h3>Automotive Articles</h3>
-            <p>Repair tips, guides, and industry knowledge.</p>
-            <a href="/articles/">Read Articles →</a>
-        </div>
-
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps?q=Steinbach,MB&z=9&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
     </div>
 </div>
 
 <footer>
-    © 2026 Jon’s AutoHub — Emergency Mobile RV & Small Engine Repair • Southeast Manitoba
+    © 2026 Jon’s RV & Small Engine Repair — Emergency Mobile Service • Southeast Manitoba
 </footer>
 
 </body>
